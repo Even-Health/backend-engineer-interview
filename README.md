@@ -1,5 +1,7 @@
 # backend-engineer-interview
 
+`cleverTapGateway.sendEvent(SignupCompletedEvent.builder().build().wrap(member.getEmail()));`
+
 ```
 Caused by: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.evenhealth.cabana.infrastructure.clevertap.model.event.SignupCompletedEvent]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.evenhealth.cabana.infrastructure.clevertap.model.event.SignupCompletedEvent and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.evenhealth.cabana.infrastructure.clevertap.model.CleverTapWrapper["d"]->java.util.ImmutableCollections$List12[0]->com.evenhealth.cabana.infrastructure.clevertap.model.event.EventPayload["evtData"])
 at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:462) ~[spring-web-5.3.22.jar!/:5.3.22]
